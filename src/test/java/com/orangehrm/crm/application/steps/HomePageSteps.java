@@ -1,5 +1,9 @@
 package com.orangehrm.crm.application.steps;
 
-public class HomePageSteps {
+import com.orangehrm.crm.application.elements.HomePageElements;
+
+public class HomePageSteps extends HomePageElements {
+
+
 
 }

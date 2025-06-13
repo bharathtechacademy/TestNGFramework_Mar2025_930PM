@@ -1,6 +1,10 @@
 package com.orangehrm.crm.application.steps;
 
-public class LoginPageSteps {
+import com.orangehrm.crm.application.elements.LoginPageElements;
+
+public class LoginPageSteps extends LoginPageElements {
+
+
 	
 	
 
