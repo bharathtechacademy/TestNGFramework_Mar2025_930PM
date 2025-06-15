@@ -9,6 +9,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import com.orangehrm.crm.framework.reports.Reports;
+
 /**
  * The {@code BasePage} class provides common browser setup and teardown functionality
  * for web-based automated tests. It supports launching Chrome, Firefox, and Edge browsers.
@@ -32,7 +34,7 @@ import org.testng.annotations.Parameters;
  * 
  * @author Bharath Reddy
  */
-public class BasePage {
+public class BasePage extends Reports{
 
     /** Singleton instance of the WebDriver. */
     private static WebDriver driver = null;

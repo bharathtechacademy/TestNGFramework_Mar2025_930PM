@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-15T12:02:10 IST" name="Suite" finished-at="2025-06-15T12:02:48 IST" duration-ms="38444">
+    <groups>
+    </groups>
+    <test started-at="2025-06-15T12:02:10 IST" name="Test" finished-at="2025-06-15T12:02:48 IST" duration-ms="38444">
+      <class name="com.orangehrm.crm.application.tests.ApplicationTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:10 IST" name="setupReport" finished-at="2025-06-15T12:02:10 IST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:10 IST" name="setupBrowser" finished-at="2025-06-15T12:02:11 IST" duration-ms="1214" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:11 IST" name="initializePages" finished-at="2025-06-15T12:02:12 IST" depends-on-methods="com.orangehrm.crm.framework.base.BasePage.setupBrowser" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="verifyLoginPageLogoAndHeader(java.lang.String)[pri:1, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:12 IST" name="verifyLoginPageLogoAndHeader" data-provider="data" finished-at="2025-06-15T12:02:16 IST" duration-ms="4043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageLogoAndHeader -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:16 IST" name="teardownBrowser" finished-at="2025-06-15T12:02:16 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:16 IST" name="setupBrowser" finished-at="2025-06-15T12:02:17 IST" duration-ms="858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:17 IST" name="initializePages" finished-at="2025-06-15T12:02:17 IST" depends-on-methods="com.orangehrm.crm.framework.base.BasePage.setupBrowser" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:2, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:17 IST" name="verifyLoginWithValidCredentials" data-provider="data" finished-at="2025-06-15T12:02:22 IST" duration-ms="5230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:22 IST" name="teardownBrowser" finished-at="2025-06-15T12:02:22 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method signature="verifyLoginWithInValidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:22 IST" name="verifyLoginWithInValidCredentials" data-provider="data" finished-at="2025-06-15T12:02:22 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getPhysicalNumberOfRows()" because "sh" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getPhysicalNumberOfRows()" because "sh" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getPhysicalNumberOfRows()" because "sh" is null
+at com.orangehrm.crm.framework.utilities.ExcelUtil.readExcelData(ExcelUtil.java:98)
+at com.orangehrm.crm.application.tests.BaseTest.testData(BaseTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInValidCredentials -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:22 IST" name="setupBrowser" finished-at="2025-06-15T12:02:23 IST" duration-ms="887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:23 IST" name="initializePages" finished-at="2025-06-15T12:02:23 IST" depends-on-methods="com.orangehrm.crm.framework.base.BasePage.setupBrowser" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="VerifyForgotLoginFeature()[pri:4, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:23 IST" name="VerifyForgotLoginFeature" finished-at="2025-06-15T12:02:27 IST" duration-ms="4449" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidElementStateException">
+            <message>
+              <![CDATA[invalid element state
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7c78b17abb3f5c0c6f6c1fdbee751908, clearElement {id=f.69FBB121721D67CD1EF07166D21A6356.d.B925172CE7DEE1B8A8D1F21B5969841A.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55172/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7c78b17abb3f5c0c6f6c1fdbee751908)] -> xpath: //h6[text()='Reset Password']]
+Session ID: 7c78b17abb3f5c0c6f6c1fdbee751908]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidElementStateException: invalid element state
+  (Session info: chrome=137.0.7151.104)
+Build info: version: '4.32.0', revision: 'd17c8aa950'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7c78b17abb3f5c0c6f6c1fdbee751908, clearElement {id=f.69FBB121721D67CD1EF07166D21A6356.d.B925172CE7DEE1B8A8D1F21B5969841A.e.24}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\india\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55172}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55172/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7c78b17abb3f5c0c6f6c1fdbee751908)] -> xpath: //h6[text()='Reset Password']]
+Session ID: 7c78b17abb3f5c0c6f6c1fdbee751908
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.clear(Unknown Source)
+at com.orangehrm.crm.framework.web.commons.WebCommons.enterText(WebCommons.java:103)
+at com.orangehrm.crm.application.steps.ForgotLoginSteps.enterUsernameTorestThePassword(ForgotLoginSteps.java:24)
+at com.orangehrm.crm.application.tests.ApplicationTest.VerifyForgotLoginFeature(ApplicationTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidElementStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyForgotLoginFeature -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:28 IST" name="teardownBrowser" finished-at="2025-06-15T12:02:28 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:28 IST" name="setupBrowser" finished-at="2025-06-15T12:02:29 IST" duration-ms="1054" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:29 IST" name="initializePages" finished-at="2025-06-15T12:02:29 IST" depends-on-methods="com.orangehrm.crm.framework.base.BasePage.setupBrowser" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="VerifyProfileImageInHomePage(java.lang.String,java.lang.String)[pri:5, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:29 IST" name="VerifyProfileImageInHomePage" data-provider="data" finished-at="2025-06-15T12:02:38 IST" duration-ms="9614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProfileImageInHomePage -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:38 IST" name="teardownBrowser" finished-at="2025-06-15T12:02:39 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="setupBrowser(java.lang.String)[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:39 IST" name="setupBrowser" finished-at="2025-06-15T12:02:40 IST" duration-ms="1021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method is-config="true" signature="initializePages()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:40 IST" name="initializePages" finished-at="2025-06-15T12:02:40 IST" depends-on-methods="com.orangehrm.crm.framework.base.BasePage.setupBrowser" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method signature="VerifyHomePageMenus(java.lang.String,java.lang.String)[pri:6, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:40 IST" name="VerifyHomePageMenus" data-provider="data" finished-at="2025-06-15T12:02:48 IST" duration-ms="8361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageMenus -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.orangehrm.crm.application.tests.ApplicationTest@7f0eb4b4]" started-at="2025-06-15T12:02:48 IST" name="teardownBrowser" finished-at="2025-06-15T12:02:48 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+      </class> <!-- com.orangehrm.crm.application.tests.ApplicationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

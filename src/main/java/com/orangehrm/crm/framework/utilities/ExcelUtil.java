@@ -99,13 +99,13 @@ public class ExcelUtil {
             int totalColumns = sh.getRow(0).getPhysicalNumberOfCells();
 
             // Create a 2D array to store the data
-            data = new String[totalRows][totalColumns];
+            data = new String[totalRows-1][totalColumns];
 
             // Loop to iterate over rows
-            for (int r = 0; r < totalRows; r++) {
+            for (int r = 1; r < totalRows; r++) {
                 // Loop to iterate over columns
                 for (int c = 0; c < totalColumns; c++) {
-                    data[r][c] = sh.getRow(r).getCell(c).getStringCellValue();
+                    data[r-1][c] = sh.getRow(r).getCell(c).getStringCellValue();
                 }
             }
 

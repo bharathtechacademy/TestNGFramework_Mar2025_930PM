@@ -14,6 +14,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
 import com.orangehrm.crm.framework.base.BasePage;
+import com.orangehrm.crm.framework.constants.Constants;
+import com.orangehrm.crm.framework.reports.Reports;
 import com.orangehrm.crm.framework.utilities.PropUtil;
 
 /**
@@ -179,8 +181,8 @@ public class WebCommons {
      * @param element WebElement to wait for
      * @param seconds timeout duration in seconds
      */
-    public void waitForElement(WebElement element, long seconds) {
-        new WebDriverWait(driver, Duration.ofSeconds(seconds))
+    public void waitForElement(WebElement element) {
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.WAIT_TIME))
             .until(ExpectedConditions.visibilityOf(element));
     }
 
@@ -190,8 +192,8 @@ public class WebCommons {
      * @param locator By locator to find element(s)
      * @param seconds timeout duration in seconds
      */
-    public void waitForElement(By locator, long seconds) {
-        new WebDriverWait(driver, Duration.ofSeconds(seconds))
+    public void waitForElement(By locator) {
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.WAIT_TIME))
             .until(ExpectedConditions.numberOfElementsToBeMoreThan(locator, 0));
     }
 
@@ -200,8 +202,8 @@ public class WebCommons {
      * 
      * @param seconds timeout duration in seconds
      */
-    public void waitForAlert(long seconds) {
-        new WebDriverWait(driver, Duration.ofSeconds(seconds))
+    public void waitForAlert() {
+        new WebDriverWait(driver, Duration.ofSeconds(Constants.WAIT_TIME))
             .until(ExpectedConditions.alertIsPresent());
     }
 
@@ -487,5 +489,22 @@ public class WebCommons {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 0);");
     }
+    
+    /**
+	 * Method to print logs in the report.
+	 */
+    public void log(String status, String message) {
+		if(status.equalsIgnoreCase("info")) {
+			Reports.logger.info("INFO: " + message);
+		} else if(status.equalsIgnoreCase("pass")) {
+			Reports.logger.pass("PASS: " + message);
+		} else if(status.equalsIgnoreCase("fail")) {
+			Reports.logger.fail("FAIL: " + message);
+		} else if(status.equalsIgnoreCase("warn")) {
+			Reports.logger.warning("WARNING: " + message);
+		} else {
+			System.out.println("UNKNOWN STATUS: " + message);
+		}
+	}
 
 }
