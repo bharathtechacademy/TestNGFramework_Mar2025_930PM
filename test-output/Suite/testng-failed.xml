@@ -9,7 +9,6 @@
     <classes>
       <class name="com.orangehrm.crm.application.tests.ApplicationTest">
         <methods>
-          <include name="verifyLoginWithInValidCredentials"/>
           <include name="teardownBrowser"/>
           <include name="initializePages"/>
           <include name="VerifyForgotLoginFeature"/>
